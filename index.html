@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Sister 💕</title>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#fff0f5;background-image:radial-gradient(#ffb6d9 1.5px,transparent 1.5px);background-size:22px 22px;font-family:'Poppins',sans-serif;color:#4a2a3a;min-height:100vh}
+.container{max-width:500px;margin:0 auto;padding:20px 18px 100px}
+.header{text-align:center;padding:25px 0 15px}
+
+  .photo-card{
+  text-align:center;
+  padding:16px;
+}
+.avatar-img{
+  width:110px;
+  height:110px;
+  object-fit:cover;
+  border-radius:50%;
+  border:4px solid white;
+  box-shadow:0 8px 24px rgba(255,90,138,.25);
+  display:block;
+  margin:0 auto 12px;
+}
+.name{
+  font-weight:800;
+  color:#ff5a8a;
+  font-size:18px;
+}
+.header h1{font-family:'Pacifico',cursive;font-size:42px;color:#ff4d8d;text-shadow:2px 2px 0 #fff}
+.header p{font-size:13px;letter-spacing:3px;color:#ff8ab3;font-weight:600;margin-top:4px}
+.photo-card{background:white;border-radius:28px;padding:10px;box-shadow:0 15px 35px rgba(255,77,141,0.18);transform:rotate(-1.5deg);margin:15px 0 25px;border:3px solid #fff;text-align:center}
+.emoji-avatar{font-size:65px;background:linear-gradient(135deg,#ffe4ec,#ffb6d9);border-radius:20px;padding:18px;display:block}
+.name{font-family:'Pacifico',cursive;color:#ff4d8d;font-size:22px;margin-top:8px}
+.letter-box{background:white;border-radius:26px;padding:26px 22px;box-shadow:0 12px 30px rgba(255,77,141,0.15);border:2px solid #ffd6e7;position:relative}
+.letter-box:before{content:'💌';position:absolute;top:-18px;left:20px;font-size:26px;background:white;border-radius:50%;padding:4px 8px;border:2px solid #ffd6e7}
+.controls{display:flex;gap:10px;justify-content:center;margin:18px 0;flex-wrap:wrap}
+.btn{border:none;padding:10px 18px;border-radius:100px;font-weight:600;font-size:13px;cursor:pointer;font-family:'Poppins',sans-serif}
+.btn-auto{background:#ff4d8d;color:white;box-shadow:0 6px 15px rgba(255,77,141,0.35)}
+.btn-manual{background:white;color:#ff4d8d;border:2px solid #ffd6e7}
+.typewriter{line-height:1.9;font-size:15px;min-height:380px;white-space:pre-wrap}
+.cursor{display:inline-block;width:10px;height:18px;background:#ff4d8d;animation:blink 1s infinite;vertical-align:middle;margin-left:2px;border-radius:2px}
+@keyframes blink{0%,50%{opacity:1}50.1%,100%{opacity:0}}
+.progress{height:6px;background:#ffe4ec;border-radius:100px;overflow:hidden;margin:15px 0}
+.progress-bar{height:100%;background:linear-gradient(90deg,#ff4d8d,#ff8ab3);width:0%;transition:0.3s}
+.scroll-hint{text-align:center;margin-top:18px;font-size:12px;color:#ff8ab3}
+.hearts{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;overflow:hidden;z-index:99}
+.heart{position:absolute;bottom:-20px;animation:rise linear forwards}
+@keyframes rise{0%{transform:translateY(0) rotate(0deg) scale(0.5);opacity:1}100%{transform:translateY(-110vh) rotate(360deg) scale(1.2);opacity:0}}
+.footer{text-align:center;margin-top:25px;color:#ff8ab3;font-size:12px}
+.hidden{display:none}
+</style>
+</head>
+<body>
+<div class="hearts" id="hearts"></div>
+<div class="container">
+  <div class="header"><h1>hey khaya</h1><p>Karabo</p></div>
+ <div class="photo-card">
+  <img src="karabo.jpg" alt="Buhle" class="avatar-img">
+  <div class="name">My Favourite Sister 🌸💖</div>
+ </div><div style="font-size:12px;color:#ff8ab3;margin-top:4px">my fav person • my friend • my sister</div></div>
+  <div class="controls"><button class="btn btn-auto" onclick="startAuto()">💗 Auto Play Letter</button><button class="btn btn-manual" onclick="manualNext()">👉 Tap to Scroll</button></div>
+  <div class="progress"><div class="progress-bar" id="progress"></div></div>
+  <div class="letter-box"><div id="typewriter" class="typewriter"></div><div id="hint" class="scroll-hint">👇 tap "Tap to Scroll" to continue reading my heart 👇</div></div>
+  <div class="footer">made with 💕 by your lil brother who highly appreciate you<br><span style="font-family:'Pacifico',cursive;font-size:16px;color:#ff4d8d">- Thabiso</span></div>
+</div>
+<script>
+let fullText = `To Karabo Khaya Maloba 💕,
+
+im writting this letter to appreciate you and remind you of how much you mean to me even though its ineffable.
+
+I once promised to update here and i think i its the time i keep that promise,Im not entitled but i just remembered that we should always appreciate the ones we love while we are able to because,we live in a borrowed life.Let me not scare you ...
+
+fUN FACT...
+You are someone I genuinely value you,your uniqueness, everything that makes you you to be my one and only sister in like 5 billion,2pac says it that we don't just meet and ,i agree with him,indeed you're a blessing to me ...
+
+I know you..infact we know you've been through alot which isn't all processed and healed yet ,And i don't know your status on that,I usually say,It won't get easier,as you grow ,you get to carry more ,But the trick is to believe that it'll be fine even when there's like 0.1% of things being better,That's still a chance to take and hold on to.So Please,in any situation where you feel like the world is hell bent against you,You can just hold onto the word inside you that says,everything passes,this will tol,and see how time flies in tbatb state,Tell me how many times you got out if the impossible situations you didn't expect to .
+
+i just wish i could be there for you anytime,just give you a shoulder when you need one ,but i can't currengly,I'll just give you wisdom so you don't need any shoulder to cry on,Stop thinking about the Past or Things you lost already,Start playing the scariest situations that your brain is afraid to explore,expose your self to severe pain of losing ghe things that you have and hold dear to ,so that when you do ,It just hurt it doesn't leave you shattered but crucked maybe if it hits hard enough...I sound crazy i know,Not that its impossible ,but that's why i never get hurt by anyone nor anything...you should try that,healing before real healing starts...
+
+
+i'm not wrjting this to  bluf about couole allot if stuff you got no idea about but,That's typical me ,I am always talking and talking and thank you for understanding me ,when alot of people struggle...i really appreciate it ,and i always will,I promis too that in any situation ,i will.understand,help when i can and always be there for you,I wish i did weave and lashes,Im sure i'd be your big customer...
+
+When the world is against you,Im.that ine oerson on your side ;) .but when the world is fighting along you,Won't let that happen ,i will dight karabo for the sake yaka Khaya.
+
+ive said too much already   ;(
+
+
+
+Just read this and know it comes from a sincere place.Place wherr you're valued and appreciated everyday...
+
+You mean a lot to me, Karabo.
+
+I love you ineffable,
+
+Yours Truly,
+Thabiso `;
+
+let i=0,isAuto=false,autoInterval=null;
+const el=document.getElementById('typewriter');
+const progress=document.getElementById('progress');
+const hint=document.getElementById('hint');
+function updateProgress(){progress.style.width=(i/fullText.length*100)+'%';}
+function typeChar(){if(i<fullText.length){el.innerHTML=fullText.substring(0,i).replace(/\n/g,'<br>')+'<span class="cursor"></span>';i++;updateProgress();if(i%30==0)spawnHeart();window.scrollTo({top:document.body.scrollHeight,behavior:'smooth'});}else{clearInterval(autoInterval);isAuto=false;el.innerHTML=fullText.replace(/\n/g,'<br>');hint.classList.add('hidden');for(let k=0;k<12;k++)setTimeout(spawnHeart,k*120);}}
+function startAuto(){if(isAuto)return;isAuto=true;hint.classList.add('hidden');autoInterval=setInterval(typeChar,40);}
+function manualNext(){clearInterval(autoInterval);isAuto=false;let target=Math.min(i+120,fullText.length);while(i<target){i++;}el.innerHTML=fullText.substring(0,i).replace(/\n/g,'<br>')+'<span class="cursor"></span>';updateProgress();hint.classList.remove('hidden');spawnHeart();spawnHeart();if(i>=fullText.length){el.innerHTML=fullText.replace(/\n/g,'<br>');hint.classList.add('hidden');}}
+function spawnHeart(){const hearts=['💖','💕','💗','🌸','✨','💓'];const h=document.createElement('div');h.className='heart';h.innerText=hearts[Math.floor(Math.random()*hearts.length)];h.style.left=Math.random()*100+'vw';h.style.fontSize=(16+Math.random()*18)+'px';h.style.animationDuration=(3+Math.random()*3)+'s';document.getElementById('hearts').appendChild(h);setTimeout(()=>h.remove(),6000);}
+setTimeout(startAuto,800);
+</script>
+</body>
+</html>
